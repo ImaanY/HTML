@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <form method="post" action="scripts/subscribe.pl">
+        Please enter your name:
+        <input type="text" name="UsrName">
+        <br/>
+        <button type="submit" name="OKBtn" value="OK">
+        <button type="reset" name="ResetBtn" value="Reset">
+        <button type="button" >Click me</button>
+      </form>
+      <textarea name="UsrAddr" rows="7" cols="20" >
+        Enter address here
+      </textarea>
+      <br/>
+      <hr/>
+      <form ...>>
+        <input type="radio" name="RadioDrink" value="Tea"/>Tea
+        <input type="radio" name="RadioDrink" value="Coffee"/>Coffee
+        <input type="radio" name="RadioDrink" value="Mocha"/>Soup
+        <br/>
+        <input type="checkbox" name="CheckMilk" value="Yes"/>Milk
+        <input type="checkbox" name="CheckSugar" value="Yes"/>Sugar
+        <br/>
+        <input type="submit" name="OKButton" value="Make Order"/>
+      </form>
+      <br/>
+      <form ...>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="audi">Audi</option>
+            <option value="bmw" selected>Bmw</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="toyota">Toyota</option>
+            <option value="porsche">Porsche</option>
+          </select>
+        </form>
+        <br/>
+        <hr/>
+        <form ...>
+            <input list="browsers" />
+            <datalist id="browsers">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Google Chrome">
+                  <option value="Brave">
+                  <option value="Safari">
+            </datalist>
+          </form>   
+        <br/>  
+    <form ...>
+        <input type="email" name="email"/>
+        <input type="url" name="url"/>
+    </form> 
+    <br/>
+    <form ...>
+        <input type="number" min="1" max="100" step="2" name="phoneNumber"/>
+       </form>
+    <br/>
+    <form ...>
+        <input type="range" min="1" max="10" name="ourService" value="9"/>
+       </form>
+    <br/>
+    <form ...>
+        <input type="date" name="myBirthday"/>
+       </form>
+       <br/>
+    <form ...>
+        <input type="search" q="searchProducts"/>
+    </form>
+    <br/>
+    <form ...>
+        <input type="colour" name="myFavColour"/>
+    </form>
+    <br/>
+    <form ...>
+        <input type="text" pattern="[0-9]{13,16}" name="creditCardNumber"/>
+       </form>
+    <br/>
+    <fieldset>
+        <legend>Your details</legend>
+        <label for="fname">First name</label>
+        <input id="fname" type="text">
+        <label for="sname">Last name</label>
+        <input id="sname" type="text">
+        <label for="age">Age</label>
+        <input id="age" type="number">
+    </fieldset>
+</body>
+</html>
