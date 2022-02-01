@@ -15,3 +15,4 @@ if (age >= 18 && age <= 65) {
 
 let result = age >= 50 ? "50 or over" : "under 50";
 console.log(result);
+
